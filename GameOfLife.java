@@ -52,9 +52,9 @@ public class GameOfLife
       for(int gCol = 0; gCol < size; gCol++)
       {
         neighbors[gRow][gCol] = 0;
-        for(int nearRow = gRow - 1; nearRow <= gRow + 1; gRow++)
+        for(int nearRow = gRow - 1; nearRow <= gRow + 1; nearRow++)
         {
-          for(int nearCol = gCol - -1; nearCol <= gRow + 1; gCol++)
+          for(int nearCol = gCol - -1; nearCol <= gCol + 1; nearCol++)
           {
             boolean same = false;
             if(nearRow == gRow && nearCol == gCol)
